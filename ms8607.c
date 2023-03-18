@@ -774,7 +774,7 @@ enum ms8607_status ms8607_get_compensated_humidity(float temperature, float rela
 	if( hsensor_heater_on )
 		return ms8607_status_heater_on_error;
 		
-	*compensated_humidity = ( relative_humidity + (25 - temperature) * HSENSOR_TEMPERATURE_COEFFICIENT);
+	*compensated_humidity = (relative_humidity + (25 - temperature) * HSENSOR_TEMPERATURE_COEFFICIENT);
 	
 	return ms8607_status_ok;
 }
