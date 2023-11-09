@@ -796,7 +796,7 @@ enum ms8607_status ms8607_get_compensated_humidity(float temperature, float rela
  *       - ms8607_status_ok : I2C transfer completed successfully
  *       - ms8607_status_heater_on_error : Cannot compute compensated humidity because heater is on
  */
-enum ms8607_status  ms8607_get_dew_point(float temperature,float relative_humidity, float *dew_point)
+enum ms8607_status ms8607_get_dew_point(float temperature,float relative_humidity, float *dew_point)
 {
 	double partial_pressure;
 	
